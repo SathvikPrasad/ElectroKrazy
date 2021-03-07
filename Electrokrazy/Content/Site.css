@@ -1,0 +1,161 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #e8e8e8;
+    overflow-x:hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.headig{
+   
+    margin-bottom:50px
+}
+.login_form_container{
+    width:450px;
+    margin:auto
+
+}
+.login_form_container label{
+
+}
+    .login_form_container .button_login {
+        padding: 0px;
+        margin: 0px;
+        text-align: center
+    }
+ .button_login .btn {
+            background-color: #4B5FC6 !important ;
+            color:white !important;
+        }
+.login_signup_link{
+    text-align:center;
+    margin-top:70px
+}
+    .login_signup_link span a {
+        color: #4B5FC6;
+    }
+.card_ite {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_table img {
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+  
+    backdrop-filter: blur(5px);
+    transition: all 1s;
+}
+.product_table tbody tr td {
+  line-height:170px;
+  font-size:larger;
+ 
+}
+.product_table tbody tr.table_items {
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+
+
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    transition:all 0.2s;
+}
+    .product_table tbody tr.table_items:hover {
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    }
+    .product_table {
+        border-collapse: separate;
+        border-spacing: 0 1em;
+    }
+
+
+.product_table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product_table td:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.buy_button a {
+    Text-Decoration: None !important;
+}
+a {
+    Text-Decoration: None !important;
+}
+.buy_options {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.buy_options img{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+}
+.password {
+    -webkit-text-security: disc;
+}
+.add_product_button a {
+    background-color: white;
+    color: black;
+    border: 2px solid #4B5FC6;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+        border-radius:20px
+}
+    .add_product_button a:hover, a:active {
+        background-color: #4B5FC6;
+        color: white;
+    }
+    a{
+        margin:5px
+    }
+.category_names{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px
+}
+.selected_link {
+    background-color: white;
+    color: black;
+    border: 2px solid #4B5FC6;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px
+}
