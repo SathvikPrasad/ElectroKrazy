@@ -78,7 +78,9 @@ End Code
 
     <td>
 
-        @Html.ActionLink("Details", "Details", New With {.id = item.Id})
+        @Html.ActionLink("Details", "Details", New With {.id = item.Id}) |
+        @Html.ActionLink("Delete", "Delete", New With {.id = item.Id})
+
 
     </td>
 </tr>

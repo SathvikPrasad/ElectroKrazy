@@ -61,6 +61,57 @@ Namespace Controllers
             ViewBag.UserId = New SelectList(db.Users, "Id", "FirstName", order.UserId)
             Return View(order)
         End Function
+        Function BuyItemsFromCart(<Bind(Include:="Id,UserId,ProductId,Quantity,Price")> ByVal order As Order) As ActionResult
+
+            If Session("cart") IsNot Nothing Then
+                Dim words As String() = Session("cart").Split(New Char() {","c})
+
+                ' Use For Each loop over words and display them
+
+                Dim num As String
+                For Each num In words
+                    Dim intNumber As Integer
+                    If IsNumeric(num) = True Then
+
+                        intNumber = CInt(num)
+                        Dim id As Integer = intNumber
+
+
+
+                        If num <> 0 Then
+                            Dim product As Product = db.Products.Find(id)
+                            order.UserId = Convert.ToInt32(Session("UserId"))
+                            order.ProductId = product.Id
+                            order.Quantity = 1
+                            order.Price = product.Price
+                            If ModelState.IsValid Then
+                                db.Orders.Add(order)
+                                db.SaveChanges()
+                            End If
+                            ViewBag.ProductId = New SelectList(db.Products, "Id", "ProductName", order.ProductId)
+                            ViewBag.UserId = New SelectList(db.Users, "Id", "FirstName", order.UserId)
+                        End If
+
+
+                    Else
+
+                        'do something here, your “number” is not a number
+
+                    End If
+                Next
+
+            End If
+
+            Session("cart") = ""
+
+
+            Return RedirectToAction("index", "Orders")
+
+
+
+        End Function
+
+
 
         ' GET: Orders/Edit/5
         Function Edit(ByVal id As Integer?) As ActionResult

@@ -111,10 +111,25 @@ Namespace Controllers
             Session("Image") = product.Image
             Session("product_discription") = product.Description
 
-
-
-
             Return RedirectToAction("create", "Orders")
+        End Function
+
+        Function AddToCart(ByVal id As Integer?) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+            Dim product As Product = db.Products.Find(id)
+            If IsNothing(product) Then
+                Return HttpNotFound()
+            End If
+            Session("cart") = Session("cart") + "," + id.ToString()
+
+            Return RedirectToAction("index", "products")
+        End Function
+        Function Cart() As ActionResult
+            Dim products = db.Products.Include(Function(p) p.Category)
+
+            Return View(products.ToList())
         End Function
         Function ByCategory(ByVal category As String) As ActionResult
 

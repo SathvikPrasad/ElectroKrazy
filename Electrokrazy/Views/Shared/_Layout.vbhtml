@@ -41,17 +41,16 @@
                             @<li>@Html.ActionLink("Products", "Index", "Products")</li>
                             @<li>@Html.ActionLink("Orders", "Index", "Orders")</li>
                             @<li>@Html.ActionLink("User Info", "Details", "Users")</li>
-
-                            @<li>@Html.ActionLink("log out", "LogOut", "Home")</li>
+                             @<li>@Html.ActionLink("Cart", "Cart", "Products")</li>
+                              @<li>@Html.ActionLink("log out", "LogOut", "Home")</li>
 
                         End If
 
                     Else
-
-                        @<li>@Html.ActionLink("Login", "Login", "Home")</li>
-
+                           @<li>@Html.ActionLink("Login", "Login", "Home")</li>
 
                     End If
+
 
 
 

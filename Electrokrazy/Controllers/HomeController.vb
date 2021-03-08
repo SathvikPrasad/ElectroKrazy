@@ -23,6 +23,7 @@ Namespace MvcLoginAppDemo.Controllers
                         Session("UserID") = obj.Id.ToString()
                         Session("UserEmail") = obj.Email.ToString()
                         Session("BYCAT") = "All"
+                        Session("cart") = "0"
                         If (objUser.Email = "admin@gmail.com") Then
                             Return RedirectToAction("Index", "Users")
 

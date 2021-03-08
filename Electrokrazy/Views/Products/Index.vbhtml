@@ -11,7 +11,7 @@
         aList = aList.Distinct.ToList()
     Next
 
-    Dim Bycat As String
+    Dim Bycat As String = "All"
 
 
     @If Session("BYCAT") IsNot Nothing Then
@@ -30,7 +30,8 @@ End Code
 
         If Session("UserEmail").ToString().ToLower().Contains("admin@gmail.com") Then
 
-            @<p Class="add_product_button">@Html.ActionLink("Add a New Product ", "Create")</p>
+
+        @<p Class="add_product_button">@Html.ActionLink("Add a New Product ", "Create")</p>
         Else
 
 
@@ -38,88 +39,43 @@ End Code
     End If
 
 
-<div class="category_names">
-    @If Bycat = "All" Then
-        @<p class="selected_link">@Html.ActionLink("All Products", "ByCategory", New With {.category = "All"})</p>
+    <div class="category_names">
+        @If Bycat = "All" Then
+            @<p class="selected_link">@Html.ActionLink("All Products", "ByCategory", New With {.category = "All"})</p>
 
-    Else
-
-        @<p>@Html.ActionLink("All Products", "ByCategory", New With {.category = "All"})</p>
-
-    End If
-    @For Each item In aList
-        If Bycat = item Then
-            @<p class="selected_link">@Html.ActionLink(item, "ByCategory", New With {.category = item})</p>
         Else
-            @<p>@Html.ActionLink(item, "ByCategory", New With {.category = item})</p>
+
+            @<p>@Html.ActionLink("All Products", "ByCategory", New With {.category = "All"})</p>
 
         End If
+        @For Each item In aList
+            If Bycat = item Then
+                @<p class="selected_link">@Html.ActionLink(item, "ByCategory", New With {.category = item})</p>
+            Else
+                @<p>@Html.ActionLink(item, "ByCategory", New With {.category = item})</p>
+
+            End If
 
 
-    Next
-
-</div>
-  
-
-  
-
-
-
-    </p>
-<Table Class="table product_table">
-
-    @If Bycat = "All" Then
-
-        @For Each item In Model
-            @<tr class="table_items">
-                <td>
-
-                    <img src="@item.Image" alt="Sample Image" width="300px" />
-                </td>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.ProductName)
-                </td>
-
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.Category.CategoryName)
-                </td>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.Description)
-                </td>
-                <td>
-                    $@Html.DisplayFor(Function(modelItem) item.Price)
-                </td>
-
-
-                <td>
-
-
-                    @If Session("UserEmail") IsNot Nothing Then
-
-                        If Session("UserEmail").ToString().ToLower().Contains("admin@gmail.com") Then
-
-
-                            @Html.ActionLink("Edit", "Edit", New With {.id = item.Id})
-                            @Html.ActionLink("Details", "Details", New With {.id = item.Id})
-                            @Html.ActionLink("Delete", "Delete", New With {.id = item.Id})
-                        Else
-
-                            @<p class="buy_button">@Html.ActionLink("Buy", "Buy", New With {.id = item.Id})</p>
-                        End If
-                    End If
-                </td>
-            </tr>
         Next
-    End If
-    @If Bycat <> "All" Then
 
-        @For Each item In Model
-            If Bycat = item.Category.CategoryName Then
+    </div>
 
+
+
+
+
+
+
+    <Table Class="table product_table">
+
+        @If Bycat = "All" Then
+
+            @For Each item In Model
                 @<tr class="table_items">
                     <td>
 
-                        <img src="@item.Image" alt="Sample Image" width="300px" />
+                        <img src="@item.Image" alt="Sample Image" />
                     </td>
                     <td>
                         @Html.DisplayFor(Function(modelItem) item.ProductName)
@@ -148,16 +104,76 @@ End Code
                                 @Html.ActionLink("Details", "Details", New With {.id = item.Id})
                                 @Html.ActionLink("Delete", "Delete", New With {.id = item.Id})
                             Else
+                                @<div>
+                            <span class="buy_button">@Html.ActionLink("Buy", "Buy", New With {.id = item.Id})</span>
+                            <span Class="buy_button">@Html.ActionLink("Add to Cart", "AddToCart", New With {.id = item.Id})</span>
+                                </div>
 
-                                @<p class="buy_button">@Html.ActionLink("Buy", "Buy", New With {.id = item.Id})</p>
+
                             End If
                         End If
                     </td>
                 </tr>
+            Next
+        End If
+        @If Bycat <> "All" Then
+
+            @For Each item In Model
+                If Bycat = item.Category.CategoryName Then
+
+                    @<tr class="table_items">
+                        <td>
+
+                            <img src="@item.Image" alt="Sample Image" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Function(modelItem) item.ProductName)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(Function(modelItem) item.Category.CategoryName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Function(modelItem) item.Description)
+                        </td>
+                        <td>
+                            $@Html.DisplayFor(Function(modelItem) item.Price)
+                        </td>
+
+
+                        <td>
+
+
+                            @If Session("UserEmail") IsNot Nothing Then
+
+                                If Session("UserEmail").ToString().ToLower().Contains("admin@gmail.com") Then
+
+
+                                    @Html.ActionLink("Edit", "Edit", New With {.id = item.Id})
+                                    @Html.ActionLink("Details", "Details", New With {.id = item.Id})
+                                    @Html.ActionLink("Delete", "Delete", New With {.id = item.Id})
+                                Else
+
+                                    @<p class="buy_button">@Html.ActionLink("Buy", "Buy", New With {.id = item.Id})</p>
+                                End If
+                            End If
+
+
+                        </td>
+                    </tr>
+                End If
+
+
+            Next
             End If
 
-        Next
-    End If
+
+    </Table>
 
 
-</Table>
+
+
+
+
+  
+
