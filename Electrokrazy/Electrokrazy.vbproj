@@ -247,6 +247,7 @@
     <Content Include="Context\Electrokrazy_Model.edmx.diagram">
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
     </Content>
+    <Content Include="Images\hp-stream-11-laptop1586967832738442.webp" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -258,6 +259,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Images\ElectroKraze6.png" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />

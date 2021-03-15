@@ -7,10 +7,40 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+
 </head>
+<style>
+    .navbar a{
+        color:white !important;
+        font-size:large
+    }
+    .navbar li:hover{
+        cursor:none !important;
+
+    }
+    .navbar {
+        cursor: none !important;
+    }
+    .navbar a{
+        cursor:none !important;
+    }
+        .navbar a:hover {
+            background-color: #01076C !important;
+            border-radius:10px;
+            cursor:none;
+            transition:all 0.2s ease-in-out;
+        } 
+        .navbar:hover{
+            cursor:none !important;
+        }
+        .navbar div:hover{
+            cursor:none !important
+
+        }
+</style>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top " style="background-image:url(../../Images/ElectroKraze6.png);background-size:contain;background-repeat:no-repeat;background-color:#020B95;">
+        <div class="container " style="float:right;background-color:rgba(0,0,0,0);width:70%;" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -69,5 +99,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required:=False)
+    
 </body>
 </html>

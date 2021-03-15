@@ -135,7 +135,7 @@ Namespace Controllers
 
             Session("BYCAT") = category
 
-            Return RedirectToAction("Index", "Products")
+            Return RedirectToAction("index", "products")
         End Function
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If (disposing) Then

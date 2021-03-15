@@ -136,10 +136,7 @@ a {
     display: inline-block;
         border-radius:20px
 }
-    .add_product_button a:hover, a:active {
-        background-color: #4B5FC6;
-        color: white;
-    }
+
     a{
         margin:5px
     }
