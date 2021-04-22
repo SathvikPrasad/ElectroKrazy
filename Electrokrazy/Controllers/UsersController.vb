@@ -55,9 +55,9 @@ Namespace Controllers
             If ModelState.IsValid Then
                 db.Users.Add(user)
                 db.SaveChanges()
-                Return RedirectToAction("Index")
+                Return RedirectToAction("Login", "Home")
             End If
-            Return View(user)
+            Return RedirectToAction("Login", "Home")
         End Function
 
         ' GET: Users/Edit/5

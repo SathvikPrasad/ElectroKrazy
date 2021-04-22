@@ -1,0 +1,30 @@
+﻿body {
+    background-color: #caa26d;
+}
+
+.button_login .btn {
+    background-color: #44321a !important;
+    color: white !important;
+    border-color: black;
+}
+
+.form-control {
+    background-color: #e6e6e6;
+}
+
+.add_product_button a {
+    background-color: #44321a;
+    border: 2px solid #44321a;
+    color: #caa26d;
+}
+
+.navbar a {
+    color: #e6e6e6 !important;
+    font-size: large
+}
+
+    .navbar a:hover {
+        background-color: #44321a !important;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+    }

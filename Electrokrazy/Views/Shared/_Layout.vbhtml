@@ -14,32 +14,24 @@
         color:white !important;
         font-size:large
     }
-    .navbar li:hover{
-        cursor:none !important;
-
-    }
-    .navbar {
-        cursor: none !important;
-    }
-    .navbar a{
-        cursor:none !important;
-    }
+ 
+  
         .navbar a:hover {
-            background-color: #01076C !important;
+            background-color: #01076C ;
             border-radius:10px;
-            cursor:none;
+       
             transition:all 0.2s ease-in-out;
         } 
         .navbar:hover{
-            cursor:none !important;
+         
         }
         .navbar div:hover{
-            cursor:none !important
+           
 
         }
 </style>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top " style="background-image:url(../../Images/ElectroKraze6.png);background-size:contain;background-repeat:no-repeat;background-color:#020B95;">
+    <div class="navbar navbar-inverse navbar-fixed-top " style="background-image:url(../../Images/Electrokraze.png);background-size:contain;background-repeat:no-repeat;background-color:#5f411a;">
         <div class="container " style="float:right;background-color:rgba(0,0,0,0);width:70%;" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +39,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("ElectroKrazy", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
+                @Html.ActionLink("ElectroKraze", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
+                @Html.ActionLink("About Us", "AboutUs", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

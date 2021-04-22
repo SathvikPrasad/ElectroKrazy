@@ -221,6 +221,7 @@
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Electrokraze.css" />
     <Content Include="Context\Electrokrazy_Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
@@ -247,7 +248,11 @@
     <Content Include="Context\Electrokrazy_Model.edmx.diagram">
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
     </Content>
-    <Content Include="Images\hp-stream-11-laptop1586967832738442.webp" />
+    <Content Include="Images\mouse.jpg" />
+    <Content Include="Images\Electrokraze.png" />
+    <Content Include="Images\FreeLancer\Freelance website developement contract %2806-04-2021%29.pdf" />
+    <Content Include="Images\FreeLancer\Reference - Google Docs.lnk" />
+    <Content Include="Images\FreeLancer\ROAD MAP - Google Docs.lnk" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -259,7 +264,14 @@
     </None>
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Images\ElectroKraze6.png" />
+    <Content Include="Images\ian-dooley-DJ7bWa-Gwks-unsplash 1.png" />
+    <Content Include="Images\pexels-craig-dennis-205421 %281%29.jpg" />
+    <Content Include="Images\pexels-designecologist-1779487 %281%29.jpg" />
+    <Content Include="Images\pexels-jess-bailey-designs-788946 %281%29.jpg" />
+    <Content Include="Images\pexels-josh-sorenson-1334597 %281%29.jpg" />
+    <Content Include="Images\pexels-junior-teixeira-2047905 %281%29.jpg" />
+    <Content Include="Images\pexels-kindel-media-7054720 %281%29.jpg" />
+    <Content Include="Images\pexels-skitterphoto-705164 %281%29.jpg" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -290,6 +302,7 @@
     <Content Include="Views\Home\Login.vbhtml" />
     <Content Include="Views\Home\UserDashBoard.vbhtml" />
     <Content Include="Views\Products\Cart.vbhtml" />
+    <Content Include="Views\Home\AboutUs.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

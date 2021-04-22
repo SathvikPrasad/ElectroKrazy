@@ -77,7 +77,6 @@ C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\bin\System.Web.WebPages.
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\bin\Newtonsoft.Json.xml
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\bin\Antlr3.Runtime.pdb
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.vbprojAssemblyReference.cache
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.Resources.resources
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.vbproj.GenerateResource.cache
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.vbproj.CoreCompileInputs.cache
@@ -85,3 +84,4 @@ C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.v
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.dll
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.xml
 C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.pdb
+C:\Users\sathvik\source\repos\Electrokrazy\Electrokrazy\obj\Debug\Electrokrazy.vbprojAssemblyReference.cache

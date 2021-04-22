@@ -25,7 +25,7 @@ End Code
         <th>
             @Html.DisplayNameFor(Function(model) model.Address)
         </th>
-    </tr>op
+    </tr>
 
 @For Each item In Model
     @<tr>

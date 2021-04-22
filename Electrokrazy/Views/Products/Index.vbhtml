@@ -28,7 +28,7 @@ End Code
 
 <style>
     body {
-        padding: 0px
+        padding: 0px;
     }
 
     .body-content {
@@ -38,7 +38,8 @@ End Code
 
     .main {
         margin-top: 62px;
-        background-color: green;
+        background-color: #caa26d;
+        color: #e6e6e6;
         width: 100vw;
         height: calc(100vh - 62px)
     }
@@ -52,7 +53,7 @@ End Code
         }
 
     .main_side_bar {
-        background-color: white;
+        background-color: #caa26d;
         flex: 0 1 20%;
     }
 
@@ -60,7 +61,7 @@ End Code
         height: 100%;
         width: 80%;
         box-sizing: border-box;
-        background-color: white;
+        background-color: #caa26d;
         padding: 10px;
         padding-top: 40px;
         display: grid;
@@ -72,7 +73,7 @@ End Code
         .main_content > * {
             box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 5px 10px 18px #888888;
+            box-shadow: 3px 6px 9px #44321a;
         }
 
     .main_side_bar .category_names {
@@ -101,7 +102,7 @@ End Code
     .main_content_card {
         max-width: 100%;
         height: 350px;
-        background-color: white;
+        background-color: #44321a;
         border-radius: 12px;
     }
 
@@ -109,14 +110,13 @@ End Code
         width: 100%;
         height: 60%;
         border-radius: 12px;
-        background-color: white;
+        background-color: #44321a;
         background-image: url("https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 10px;
     }
-
 
     .card_items_list a {
         padding: 10px 20px;
@@ -127,7 +127,7 @@ End Code
 
 
     .card_secondary {
-        height: 40%
+        height: 40%;
     }
 
     .add_product_button {
@@ -138,12 +138,12 @@ End Code
     }
 
         .add_product_button a {
-            border-color: #34A0C2 !important;
+            border-color: #44321a !important;
         }
 
             .add_product_button a:hover, a:active {
-                background-color: #34A0C2;
-                color: white;
+                background-color: #44321a;
+                color: #e6e6e6;
             }
 
     .main_side_bar {

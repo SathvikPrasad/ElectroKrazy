@@ -55,6 +55,13 @@ Namespace MvcLoginAppDemo.Controllers
 
         End Function
 
+        Public Function AboutUs() As ActionResult
+
+            Return View()
+
+        End Function
+
+
 
     End Class
 End Namespace
