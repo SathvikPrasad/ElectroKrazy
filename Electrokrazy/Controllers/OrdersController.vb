@@ -16,6 +16,7 @@ Namespace Controllers
 
         ' GET: Orders
         Function Index() As ActionResult
+            Session("current_page") = "orders"
             Dim orders = db.Orders.Include(Function(o) o.Product).Include(Function(o) o.User)
             Return View(orders.ToList())
         End Function
@@ -103,7 +104,6 @@ Namespace Controllers
             End If
 
             Session("cart") = ""
-
 
             Return RedirectToAction("index", "Orders")
 

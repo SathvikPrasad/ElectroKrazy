@@ -16,6 +16,7 @@ Namespace Controllers
 
         ' GET: Users
         Function Index() As ActionResult
+            Session("current_page") = "users"
 
             If Session("UserEmail") IsNot Nothing Then
 
@@ -26,18 +27,21 @@ Namespace Controllers
                     Return RedirectToAction("Index", "Products")
                 End If
             End If
-
+            Return RedirectToAction("Index", "Products")
 
         End Function
 
         ' GET: Users/Details/5
         Function Details() As ActionResult
+            Session("current_page") = "userinfo"
+
             If Session("UserId") IsNot Nothing Then
                 Dim user_id As Int32 = Convert.ToInt32(Session("UserId"))
                 Dim user As User = db.Users.Find(user_id)
                 Return View(user)
 
             End If
+            Return RedirectToAction("Login", "Home")
         End Function
 
 

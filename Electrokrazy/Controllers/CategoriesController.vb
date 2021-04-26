@@ -33,6 +33,7 @@ Namespace Controllers
 
         ' GET: Categories/Create
         Function Create() As ActionResult
+            Session("current_page") = "catcreate"
             Return View()
         End Function
 

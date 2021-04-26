@@ -16,6 +16,8 @@ Namespace Controllers
 
         ' GET: Products
         Function Index() As ActionResult
+            Session("current_page") = "products"
+
             Dim products = db.Products.Include(Function(p) p.Category)
             Return View(products.ToList())
         End Function
@@ -127,6 +129,8 @@ Namespace Controllers
             Return RedirectToAction("index", "products")
         End Function
         Function Cart() As ActionResult
+            Session("current_page") = "cart"
+
             Dim products = db.Products.Include(Function(p) p.Category)
 
             Return View(products.ToList())

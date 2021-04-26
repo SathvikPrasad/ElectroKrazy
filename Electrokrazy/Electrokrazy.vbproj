@@ -158,31 +158,31 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="Context\Category.vb">
+    <Compile Include="App_Data\Category.vb">
       <DependentUpon>Electrokrazy_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\Electrokrazy_Model.Context.vb">
+    <Compile Include="App_Data\Electrokrazy_Model.Context.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Electrokrazy_Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\Electrokrazy_Model.Designer.vb">
+    <Compile Include="App_Data\Electrokrazy_Model.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Context\Electrokrazy_Model.vb">
+    <Compile Include="App_Data\Electrokrazy_Model.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Electrokrazy_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\Order.vb">
+    <Compile Include="App_Data\Order.vb">
       <DependentUpon>Electrokrazy_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\Product.vb">
+    <Compile Include="App_Data\Product.vb">
       <DependentUpon>Electrokrazy_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\User.vb">
+    <Compile Include="App_Data\User.vb">
       <DependentUpon>Electrokrazy_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CategoriesController.vb" />
@@ -222,12 +222,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Electrokraze.css" />
-    <Content Include="Context\Electrokrazy_Model.Context.tt">
+    <Content Include="App_Data\Electrokrazy_Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
       <LastGenOutput>Electrokrazy_Model.Context.vb</LastGenOutput>
     </Content>
-    <Content Include="Context\Electrokrazy_Model.tt">
+    <Content Include="App_Data\Electrokrazy_Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
       <LastGenOutput>Electrokrazy_Model.vb</LastGenOutput>
@@ -241,13 +241,15 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Context\Electrokrazy_Model.edmx">
+    <EntityDeploy Include="App_Data\Electrokrazy_Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Electrokrazy_Model.Designer.vb</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Context\Electrokrazy_Model.edmx.diagram">
+    <Content Include="App_Data\Electrokrazy_Model.edmx.diagram">
       <DependentUpon>Electrokrazy_Model.edmx</DependentUpon>
     </Content>
+    <Content Include="Images\avatar-c.jpg" />
+    <Content Include="Images\IMG_2892 %283%29.JPG" />
     <Content Include="Images\mouse.jpg" />
     <Content Include="Images\Electrokraze.png" />
     <Content Include="Images\FreeLancer\Freelance website developement contract %2806-04-2021%29.pdf" />
@@ -272,6 +274,7 @@
     <Content Include="Images\pexels-junior-teixeira-2047905 %281%29.jpg" />
     <Content Include="Images\pexels-kindel-media-7054720 %281%29.jpg" />
     <Content Include="Images\pexels-skitterphoto-705164 %281%29.jpg" />
+    <Content Include="Images\photo_2021-04-23_12-40-43.jpg" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -324,7 +327,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Views\_ViewStart.vbhtml" />
-    <Content Include="Views\Home\About.vbhtml" />
     <Content Include="Views\Home\Contact.vbhtml" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
@@ -332,7 +334,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="My Project\PublishProfiles\" />
   </ItemGroup>

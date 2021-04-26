@@ -5,10 +5,28 @@ Namespace MvcLoginAppDemo.Controllers
     Public Class HomeController
         Inherits Controller
         Function Index() As ActionResult
+            Session("current_page") = "home"
+
             Return View()
         End Function
         Public Function Login() As ActionResult
+            Session("current_page") = "login"
+            If Session("UserEmail") IsNot Nothing Then
+
+                If Session("UserEmail").ToString() IsNot Nothing Then
+
+                    Return RedirectToAction("index", "products")
+                Else
+                    Return View()
+                End If
+
+            Else
+
+            End If
             Return View()
+
+
+
         End Function
 
         <HttpPost>
@@ -40,6 +58,8 @@ Namespace MvcLoginAppDemo.Controllers
         End Function
 
         Public Function UserDashBoard() As ActionResult
+            Session("current_page") = "userdashboard"
+
             If Session("UserID") IsNot Nothing Then
                 Return View()
             Else
@@ -56,6 +76,7 @@ Namespace MvcLoginAppDemo.Controllers
         End Function
 
         Public Function AboutUs() As ActionResult
+            Session("current_page") = "about"
 
             Return View()
 

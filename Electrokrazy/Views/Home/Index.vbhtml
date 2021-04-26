@@ -16,7 +16,7 @@ End Code
     .container.body-content{
         width:100% !important;
         padding:0px;
-        background-image
+
     }
   body{
       width:100vw;

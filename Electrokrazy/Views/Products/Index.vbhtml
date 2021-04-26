@@ -182,6 +182,7 @@ End Code
         border-radius: 4px;
         box-sizing: border-box;
         padding: 5px;
+        color: black
     }
 
     .min_number {
@@ -190,6 +191,7 @@ End Code
         border-radius: 4px;
         box-sizing: border-box;
         padding: 5px;
+        color: black
     }
 
     .popup {
