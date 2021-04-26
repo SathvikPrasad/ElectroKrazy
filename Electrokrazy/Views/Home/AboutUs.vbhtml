@@ -103,7 +103,16 @@ End Code
 </div>
 
 <div class="info">
+    <div class=" about_card">
+        <div class="avatar"><div style=" background-image: url('../../Images/IMG_2892 (3).JPG');"></div></div>
+        <div class="details">
+            <div><h1> Sathvik prasad</h1></div>
+            <div><p>Information Technology</p></div>
+            <div><p>T01308991</p></div>
 
+        </div>
+
+    </div>
     <div class=" about_card">
         <div class="avatar"><div style=" background-image: url('../../Images/avatar-c.jpg');"></div></div>
         <div class="details">
@@ -128,16 +137,7 @@ End Code
         </div>
 
     </div>
-    <div class=" about_card">
-        <div class="avatar"><div style=" background-image: url('../../Images/IMG_2892 (3).JPG');"></div></div>
-        <div class="details">
-            <div><h1> Sathvik prasad</h1></div>
-            <div><p>Information Technology</p></div>
-            <div><p>T01308991</p></div>
 
-        </div>
-
-    </div>
 </div>
 
 
