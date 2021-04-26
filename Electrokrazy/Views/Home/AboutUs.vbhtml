@@ -8,6 +8,10 @@ End Code
 
 <style>
 
+    body{
+        overflow:hidden
+    }
+
     .aboutUs_main {
         background-color: rgba(255,255,255,0) !important;
         padding: 10px 25px;
@@ -25,7 +29,7 @@ End Code
         border-radius: 20px;
         padding: 30px;
         margin:20px;
-        margin-top:50px;
+     
     }
 
 
@@ -76,21 +80,41 @@ End Code
     .container {
         width:90%
     }
+
+    .text_style {
+        font-family: Calibri;
+        line-height: 24px;
+        font-size: 24px;
+        margin-top: 30px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .hh {
+        text-align: center;
+        color: #5F411A;
+        font-size:40px;
+        margin-bottom:0px;
+    }
 </style>
 
 <div class="aboutUs_main" style=" text-align: center;
-
+ 
         padding: 10px 40px;
         display: flex;
         flex-direction:column;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        padding-top:0px
+
 ">
 
-    <p style="font-family:Calibri;line-height:25px;font-size:x-large;margin-top:30px">
-        In the US,  most IT professionals, small businesses, students, engineers, programmers, tech enthusiasts, gamers, and electronic device customers have relied on ELECTROCRAZE for their communication and information technology support needs since 2000.
-        ELECTROCRAZE provides the most affordable technology and online deals to its customers. During this pandemic period, as 1 in 5 Americans has been ordered to stay at home following the CDC guidelines, ELECTROCRAZE can provide you with the essential technical support products and services to work, learn, and receive Information from the safety of your home.
-        ELECTROCRAZE focused on information technology products, such as Desktops, Laptops, Phones, and accessories devices, ranging from brands like Apple, Samsung, and others. We are here for your online shopping with delivery all over the world.
+    <p class="text_style">
+        In the US,  most IT professionals, small businesses, students, engineers, programmers, tech enthusiasts, gamers, and electronic device customers have relied on ELECTROKRAZE for their communication and information technology support needs since 2000.
+        ELECTROKRAZE provides the most affordable technology and online deals to its customers.
+        </p>
+        <p class="text_style">
+        During this pandemic period, as 1 in 5 Americans has been ordered to stay at home following the CDC guidelines, ELECTROKRAZE can provide you with the essential technical support products and services to work, learn, and receive Information from the safety of your home.
+       </p><p class="text_style"> ELECTROKRAZE focused on information technology products, such as Desktops, Laptops, Phones, and accessories devices, ranging from brands like Apple, Samsung, and others. We are here for your online shopping with delivery all over the world.
     </p>
 
 
@@ -102,8 +126,11 @@ End Code
 
 </div>
 
+
+<h3 class="hh" >Team Members</h3>
+
 <div class="info">
-    <div class=" about_card">
+    <div class="about_card">
         <div class="avatar"><div style=" background-image: url('../../Images/IMG_2892 (3).JPG');"></div></div>
         <div class="details">
             <div><h1> Sathvik prasad</h1></div>
@@ -113,7 +140,7 @@ End Code
         </div>
 
     </div>
-    <div class=" about_card">
+    <div class="about_card">
         <div class="avatar"><div style=" background-image: url('../../Images/avatar-c.jpg');"></div></div>
         <div class="details">
             <div>
